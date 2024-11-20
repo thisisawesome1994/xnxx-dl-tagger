@@ -64,12 +64,11 @@ python update_mp4_metadata.py
 Optional: Specify a different root directory
 
 ```sh
-python update_mp4_metadata.py /path/to/your/root_directory
+python id3tag.py /path/to/your/root_directory
 ```
 
 Script Explanation
 ```sh
-python
 import os
 import time
 from mutagen.mp4 import MP4, MP4Tags
