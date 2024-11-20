@@ -1,10 +1,10 @@
-__version__ = '0.0.3'
+__version__ = '0.0.4'
 
 import os
 import time
 from mutagen.mp4 import MP4, MP4Tags
 
-def create_metadata(root_dir='.'):
+def main(root_dir='.'):
     for dirpath, dirnames, filenames in os.walk(root_dir):
         genre = os.path.basename(dirpath)  # Folder name as 'genre'
         for filename in filenames:
@@ -36,4 +36,4 @@ def create_metadata(root_dir='.'):
                 print(f"Error saving {file_path}: {e}")
 
 if __name__ == "__main__":
-    create_metadata(root_dir='.')  # Replace '.' with your root directory if needed
+    main(root_dir='.')  # Replace '.' with your root directory if needed
