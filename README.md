@@ -19,39 +19,51 @@ Mutagen Library: A Python module to handle audio metadata.
 Installation:
 Clone the Repository
 
-bash
+```sh
 git clone https://github.com/your_username/mp4-metadata-updater.git
 cd mp4-metadata-updater
+```
+
 Create a Virtual Environment (Optional but Recommended)
 
-bash
+```sh
 python -m venv venv
+```
+
 Activate the Virtual Environment
 
 On Windows:
 
-bash
+```sh
 venv\Scripts\activate
+```
+
 On macOS/Linux:
 
-bash
-Code kopiëren
+```sh
 source venv/bin/activate
+```
+
 Install Dependencies
 
-bash
+```sh
 pip install mutagen
+```
+
 Usage
 Place the Script in the Desired Directory
 
 Ensure the script update_mp4_metadata.py is located in the root directory containing your .mp4 files and subdirectories.
+
 Run the Script
 
-bash
+```sh
 python update_mp4_metadata.py
+```
+
 Optional: Specify a different root directory
 
-bash
+```sh
 python update_mp4_metadata.py /path/to/your/root_directory
 Script Explanation
 python
@@ -92,8 +104,10 @@ def create_metadata(root_dir='.'):
 
 if __name__ == "__main__":
     create_metadata(root_dir='.')  # Replace '.' with your root directory if needed
+```
+
 Example Directory Structure
-markdown
+```markdown
 /Media
     /Action
         - Die_Hard.mp4
@@ -106,61 +120,39 @@ After running the script, the metadata for Die_Hard.mp4 will be:
 Title: Die_Hard
 Genre: Action
 Release Date: File's modification date
+```
+
 Troubleshooting
 ModuleNotFoundError: No module named 'mutagen.mp4'; 'mutagen' is not a package
 Cause: This error occurs when Python cannot find the mutagen library or there's a naming conflict.
-
 Solution:
 
 Ensure mutagen is Installed
 
-bash
+```sh
 pip install mutagen
+```
+
 Check for Naming Conflicts
 
 Make sure there's no file named mutagen.py or a directory named mutagen in your project directory.
 Delete any __pycache__ directories if present.
-Verify Python Environment
 
-Confirm you're using the correct Python interpreter where mutagen is installed.
-Use virtual environments to manage dependencies.
-Test Imports in Python Shell
-
-bash
-python
-python
-import mutagen
-from mutagen.mp4 import MP4, MP4Tags
-If this works without errors, the environment is set up correctly.
-Multiple Python Versions
-If you have multiple Python versions installed, ensure that pip and python refer to the same version.
 
 Check Python Version
 
-bash
+```sh
 python --version
+```
+
 Check Pip Version
 
-bash
+```sh
 pip --version
+```
 Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
 
-Fork the Repository
-
-Create a Feature Branch
-
-bash
-git checkout -b feature/YourFeature
-Commit Your Changes
-
-bash
-git commit -m 'Add YourFeature'
-Push to the Branch
-
-bash
-git push origin feature/YourFeature
-Open a Pull Request
 
 License
 This project is licensed under the MIT License.
