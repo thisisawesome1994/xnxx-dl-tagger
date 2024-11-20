@@ -58,7 +58,7 @@ Ensure the script update_mp4_metadata.py is located in the root directory contai
 Run the Script
 
 ```sh
-python update_mp4_metadata.py
+python id3tag.py
 ```
 
 Optional: Specify a different root directory
