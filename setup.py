@@ -14,7 +14,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'xnxx-dl = xnxxdltagger.main:main',  # Assuming your main function is in a file called 'main.py'
+            'xnxx-dl-tagger = xnxxdltagger.main:main',  # Assuming your main function is in a file called 'main.py'
         ],
     },
 )
