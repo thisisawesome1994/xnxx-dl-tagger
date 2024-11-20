@@ -20,8 +20,8 @@ Installation:
 Clone the Repository
 
 ```sh
-git clone https://github.com/your_username/mp4-metadata-updater.git
-cd mp4-metadata-updater
+git clone https://github.com/thisisawesome1994/xnxx-dl-tagger.git
+cd xnxx-dl-tagger
 ```
 
 Create a Virtual Environment (Optional but Recommended)
